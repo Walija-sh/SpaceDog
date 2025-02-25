@@ -562,7 +562,17 @@
 </section>
 <section class="disc-container">
   <div class="section disc-sect">
-   <h3 class="disc-h"></h3>
+   <h3 class="disc-h">Disclaimer</h3>
+   <div class="disc-content">
+    <p>This white paper is intended to provide information about SECURIST(SECU) TOKEN's business model, technology, etc. to those who express interest in SECURIST(SECU) TOKEN tokens. This white paper is based on the status at the time of writing, and the Foundation does not guarantee that the contents are accurate or appropriate for the future, including the conclusion, schedule, and performance of the projects described in the roadmap. This white paper is subject to change in accordance with the policies and decisions of SECURIST (SECU) TOKEN, and the latest version of this white paper shall take precedence over any changes. Furthermore, the information or analysis contained in this white paper does not constitute a recommendation for you to participate in the project. <span class="disc-readMore">Read more...</span></p>
+    <div class="disc-hidden ">
+      <p>This white paper has not been reviewed or approved by any regulatory authority, and the publication, distribution, or dissemination of this white paper does not imply that this white paper has complied with all applicable laws or regulations. In some cases, the publication, distribution, or dissemination of this white paper may be prohibited or restricted by applicable laws and regulations. In addition, regulatory authorities may impose restrictions on the ownership, use, and holding of SECURIST (SECU) TOKEN, and the sale and use of SECURIST (SECU) TOKEN may be affected by the actions of such regulatory authorities. The information contained in this whitepaper may be translated into other languages from time to time, or used in the course of communications with different participants. Please be advised that there may be changes or mistranslations in such translations or communications, and the Korean version of the white paper posted on the website takes precedence, and investors are responsible for confirming the version that takes precedence</p>
+      <p>This white paper contains statements about future plans and actions at this point in time. These future plans are expressed using words or phrases such as "may," "will," "expect," "anticipate," "goal," "forecast," "intend," "plan," seek," "believe," "potential," "continue," "will be," and the like, and are based on assumptions and analyses that the Foundation believes to be reasonable in light of its experience, current circumstances, expectations of future developments, and other factors. However, their contents are inevitably subject to risks and uncertainties, and the actual results and performance of SECURIST (SECU) TOKEN may differ from those planned for the future.</p>
+      <p>
+        You may lose your SECURIST (SECU) TOKEN, etc. due to the compromise of your private key to your digital wallet. If access to the private key becomes inaccessible due to loss, destruction or compromise of the private key, the holder of SECURIST(SECU) TOKEN, etc. may not be able to access the blockchain-based digital assets, and SECURIST(SECU) TOKEN may not be able to restore them. Technical problems or loss of tokens, etc. may occur due to flaws, vulnerabilities or other problems that may be inherent in the smart contract.
+      </p>
+    </div>
+   </div>
   </div>
 </section>
 <footer class="footer-container">
@@ -661,6 +671,12 @@ updateFooterImage();
 
 // Run on window resize
 window.addEventListener("resize", updateFooterImage);
+
+  </script>
+  <script>
+    document.querySelector(".disc-readMore").addEventListener("click", function () {
+    document.querySelector(".disc-hidden").classList.toggle("disc-active");
+});
 
   </script>
   

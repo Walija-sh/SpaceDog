@@ -1468,6 +1468,9 @@ white-space: nowrap;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
               }
+              .footer-link{
+                align-content: flex-start;
+              }
             
               .footer-logo img{
                 max-width: 62px;

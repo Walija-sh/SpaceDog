@@ -1167,7 +1167,7 @@ text-underline-offset: 3px;
   }
   .proof-labels{
     gap: 2.5rem;
-    margin-top: -4rem;
+    /* margin-top: -4rem; */
   }
   .cust-label{
     padding: 10px 30px;

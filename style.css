@@ -543,7 +543,7 @@ color: white;
   z-index: -3;
 }
 .token-dog-l{
-  top: 45%;
+  top: 40%;
   left: 0%;
 }
 .token-dog-r{
@@ -713,17 +713,12 @@ text-align: center;
 }
 .proof-pent{
   position: absolute;
-  left: 0;
-  top: 30%;
+  right: 0;
+  top: -40%;
   opacity: .1;
   z-index: -4;
 }
-.proof-grad{
-    position: absolute;
-      z-index: -4;
-  top: -100%;
-  left: 0;
-}
+
 .proof-sect{
   padding: 20px;
 }
@@ -736,7 +731,7 @@ background: linear-gradient(180deg, #FFFFFF 54.17%, rgba(152, 255, 208, 0.8) 100
 -webkit-text-fill-color: transparent;
 background-clip: text;
 text-align: center;
-margin-block: 1rem 3rem;
+margin-block: 1rem 2rem;
 
 }
 .proof-content{
@@ -796,11 +791,16 @@ text-underline-offset: 3px;
   right: 0%;
   top: 80%;
 }
-.road-dog{
+.road-obj-l{
     position: absolute;
   left: 0%;
-  top: -10%;
-  max-width: 200px;
+  top: 32%;
+  display: none;
+}
+.road-dog{
+   position: absolute;
+  right: 0%;
+  top: -20%;
   display: none;
 }
 .road-sect{
@@ -947,13 +947,7 @@ padding-left: 2%;
 .com-container{
   position: relative;
 }
-.com-dog{
-    position: absolute;
-  left: 0%;
-  top: -40%;
-  max-width: 350px;
-  display: none;
-}
+
 
 /* FOOTER */
 .footer-container{
@@ -965,22 +959,24 @@ padding: 20px;
 }
 .footer-r-obj{
   position: absolute;
-  right: -2%;
+  right: 0%;
   top: 0%;
-  z-index: 100;
+  z-index: 50;
   display: none;
 }
 .footer-l-obj{
+  z-index: 50;
   position: absolute;
   left: 0%;
   top: 60%;
   display: none;
 }
-.footer-pent{
+
+.footer-dog{
   position: absolute;
   right: 0;
   top: -60%;
-  opacity: .1;
+  display: none;
 }
 .footer-content{
   position: relative;
@@ -1114,6 +1110,70 @@ color: #11111B;
 text-underline-offset: 3px;
 }
 
+/* Founder section */
+.found-container{
+  position: relative;
+}
+.found-pent{
+  position: absolute;
+  left: 0;
+  top: 0%;
+  opacity: .1;
+  z-index: -4;
+}
+.found-grad{
+    position: absolute;
+      z-index: -4;
+  top: -100%;
+  left: 0;
+}
+.found-sect{
+  padding: 20px;
+  color: white;
+}
+.foot-sect .cust-h{
+ margin-block: 0 ;
+}
+.found-sect > p,.gamefi-p{
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+letter-spacing: -0.01%;
+text-align: center;
+}
+.found-cards{
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.found-card{
+   display: grid;
+  gap: 1rem;
+  text-align: center;
+  color: white;
+  max-width: 330px;
+
+}
+.found-card-img{
+  margin: 0 auto;
+  max-height: 112px;
+}
+.found-card h5{
+font-weight: 600;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0.3px;
+
+}
+.found-card p{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: center;
+
+}
 /* queries */
 @media screen and (min-width:520px) {
   .token-row{
@@ -1279,6 +1339,7 @@ padding: 12px 30px;
 
   }
   .hero-img{
+    padding-top: 2rem;
     margin-top: -10%;
     max-width: 400px;
   }
@@ -1297,6 +1358,9 @@ padding: 12px 30px;
   .about-head{
     padding: 40px;
     padding-top: 20px;
+
+
+
   }
  
   .about-h{
@@ -1327,11 +1391,12 @@ padding: 12px 30px;
     .about-h-bg{
       display: block;
       backdrop-filter: blur(10px);
-      
+           
     }
     
     .about-h-bg div::before{
       display: none;
+      /* backdrop-filter: blur(20px); */
     }
     .about-text h4{
 font-size: 30px;
@@ -1411,6 +1476,9 @@ letter-spacing: -5.06%;
 word-break: none;
 white-space: nowrap;
 }
+.road-container{
+  margin-top: 4rem;
+}
 
             .road-sect{
               padding: 20px 40px;
@@ -1445,14 +1513,13 @@ white-space: nowrap;
             .road-top-hr{
               display: block;
             }
-            .road-dog{
+            .road-obj-l,.road-dog{
               display: block;
             }
-            .com-dog{
-              display: block;
-            }
+            
              .foot-sect{
                 padding: 40px;
+               
               }
               .footer-l-obj,.footer-r-obj{
                 display: block;
@@ -1463,6 +1530,16 @@ white-space: nowrap;
                 display: grid;
                 grid-template-columns: 35% 1fr;
                 align-items: flex-start;
+                clip-path: polygon(
+  5% 0%,  
+  100% 0%,   
+  100% 90%,
+  75%  90%, 
+  71% 100%,   
+  0% 100%,
+  0% 16%    
+);
+                 backdrop-filter: blur(8px);
               }
               .footer-links{
                 display: grid;
@@ -1473,7 +1550,7 @@ white-space: nowrap;
               }
             
               .footer-logo img{
-                max-width: 62px;
+                max-width: 112px;
               }
               .footer-top{
                 max-width: 350px;
@@ -1526,6 +1603,20 @@ white-space: nowrap;
                   .footer-grad{
                     display: block;
                   }
+                  .found-sect{
+                    padding: 20px 40px;
+                  }
+                  .found-sect > p,.gamefi-p{
+                    font-size: 26px;
+                    line-height: 31px;
+                  }
+                  .found-cards{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 4rem;
+                    gap: 1rem;
+                  }
                   
 
 
@@ -1567,7 +1658,7 @@ white-space: nowrap;
    .hero-sect,.about-sect,.road-sect,.foot-sect{
     padding-inline: 50px;
    }
-   .token-sect,.proof-sect{
+   .token-sect,.proof-sect,.found-sect{
     padding-inline: 80px;
    }
      .about-head{
@@ -1593,6 +1684,9 @@ white-space: nowrap;
   .footer-bottom{
     right: 5%;
   }
+  .footer-dog{
+                display: block;
+              }
  
 
 }

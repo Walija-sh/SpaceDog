@@ -974,7 +974,7 @@ padding: 20px;
 
 .footer-dog{
   position: absolute;
-  right: 0;
+  right: 5%;
   top: -60%;
   display: none;
 }
@@ -1525,7 +1525,7 @@ white-space: nowrap;
                 display: block;
               }
               .footer-content{
-                margin-top: 2rem;
+                margin-top: 2.2rem;
                 padding: 40px;
                 display: grid;
                 grid-template-columns: 35% 1fr;
